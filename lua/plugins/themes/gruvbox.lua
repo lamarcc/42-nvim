@@ -1,7 +1,7 @@
 -- Default options:
 return {
 	'ellisonleao/gruvbox.nvim',
-	priority = 1000,
+	priority = 2000,
 	opts = {
 		undercurl = true,
 		underline = true,
