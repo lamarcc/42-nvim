@@ -13,5 +13,22 @@ return {
 		branch = 'master' --Uncomment this if you are not from Lausanne!
 	},
 	-- "42Paris/42header",
-	"hardyrafael17/norminette42.nvim"
+	"hardyrafael17/norminette42.nvim",
+	"PyCQA/flake8",
+	
+	{
+		"mfussenegger/nvim-lint",
+		event = { "BufWritePost", "BufReadPost" },
+		config = function()
+			local lint = require("lint")
+			lint.linters_by_ft = {
+				python = { "flake8" },
+			}
+			vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+				callback = function()
+					lint.try_lint()
+				end,
+			})
+		end,
+	}
 }

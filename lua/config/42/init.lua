@@ -6,6 +6,15 @@
 vim.g.user42 = 'celamarc'
 vim.g.mail42 = 'celamarc@student.42lyon.fr'
 
+vim.g.kanagawa_transparent = true  -- <- ici
+
+vim.api.nvim_create_user_command("TransparentToggle", function()
+    local k = require("kanagawa")
+    vim.g.kanagawa_transparent = not vim.g.kanagawa_transparent
+    k.setup({ transparent = vim.g.kanagawa_transparent })
+    k.load()
+end, {})
+
 require("norminette").setup({
 	runOnSave = true,
 	maxErrorsToShow = 15,
@@ -13,3 +22,4 @@ require("norminette").setup({
 	-- Make sure to have it installed first (eg. with pip)
 	active = true,
 })
+
