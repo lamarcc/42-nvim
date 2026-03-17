@@ -6,7 +6,15 @@
 ]]--
 
 return {
-	-- The naming convention is "GitHub Profile/GitHub Repo"
-	--example:
-	-- 'elkowar/yuck.vim'
+    {
+        "voldikss/vim-floaterm",
+        config = function()
+            vim.g.floaterm_width = 0.8
+            vim.g.floaterm_height = 0.8
+            vim.g.floaterm_position = "center"
+        end,
+    },
+    {
+        "mg979/vim-visual-multi",
+    },
 }

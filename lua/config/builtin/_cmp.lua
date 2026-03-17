@@ -1,6 +1,7 @@
 -- [[ Configure nvim-cmp ]]--
 -- See `:help cmp`
-local cmp = require 'cmp'
+local ok, cmp = pcall(require, 'cmp')
+if not ok then return end
 local luasnip = require 'luasnip'
 require('luasnip.loaders.from_vscode').lazy_load()
 luasnip.config.setup {}
