@@ -13,7 +13,6 @@ return {
       ["<S-Tab>"]  = { "snippet_backward", "fallback" },
       ["<Tab>"]    = { "snippet_forward", "fallback" },
       ["<CR>"]     = { "accept", "fallback" },
-      ["<Esc>"]    = { "hide", "fallback" },
       ["<PageUp>"]   = { "scroll_documentation_up", "fallback" },
       ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
     },
