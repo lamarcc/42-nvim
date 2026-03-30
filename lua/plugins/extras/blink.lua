@@ -8,8 +8,8 @@ return {
       preset = "default",
       ["<Up>"]     = { "fallback" },
       ["<Down>"]   = { "fallback" },
-      ["<C-Up>"]   = { "select_prev", "fallback" },
-      ["<C-Down>"] = { "select_next", "fallback" },
+      ["<A-Up>"]   = { "select_prev", "fallback" },
+      ["<A-Down>"] = { "select_next", "fallback" },
       ["<S-Tab>"]  = { "snippet_backward", "fallback" },
       ["<Tab>"]    = { "snippet_forward", "fallback" },
       ["<CR>"]     = { "accept", "fallback" },
@@ -19,3 +19,5 @@ return {
     completion = { list = { selection = { preselect = false, auto_insert = false } } },
   },
 }
+
+

@@ -53,9 +53,9 @@ return {
 				header = {
 					'',
 					' ██┐ ███████╮  █████╮  ██████╮',
-					' ███│ ██╔════╝ ██╔══██│ ██╔══██┐',
-					'  ██│ ███████│ ███████│ ██████╔╝',
-					'  ██│ ██╔═══█│ ██╔══██│ ██╔══██┐',
+					' ███│ ██╭────╯ ██╭──██│ ██╭──██┐',
+					'  ██│ ███████│ ███████│ ██████╭╯',
+					'  ██│ ██╭───█│ ██╭──██│ ██╭──██┐',
 					'  ██│ ███████│ ██│  ██│ ██│  ██│',
 					'  ╰─╯ ╰──────╯ ╰─╯  ╰─╯ ╰─╯  ╰─╯',
 					'',
@@ -97,9 +97,9 @@ return {
 				},
 				footer = {
 					'',
-					'42-Nvim V1.5.2',
-					'[ ] https://github.com/fclivaz42/42-nvim',
-					'Have a nice day :)'
+					'on est le 26 demande à 26',
+					'[ ] https://github.com/lamarcc',
+					'16ar - csrlmrc'
 				},
 				project = {
 					action = 'Neotree focus filesystem left reveal_force_cwd=true dir=',
