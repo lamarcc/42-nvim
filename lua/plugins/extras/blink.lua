@@ -13,7 +13,7 @@ return {
       ["<A-Down>"] = { "select_next", "fallback" },
       ["<S-Tab>"]  = { "snippet_backward", "fallback" },
       ["<Tab>"]    = { "snippet_forward", "fallback" },
-      ["<CR>"]     = { "accept", "fallback" },
+      ["<CR>"]     = { "select_and_accept", "fallback" },
       ["<PageUp>"]   = { "scroll_documentation_up", "fallback" },
       ["<PageDown>"] = { "scroll_documentation_down", "fallback" },
     },
