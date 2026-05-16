@@ -12,8 +12,6 @@
 --vim.cmd.colorscheme 'onedark'
 vim.cmd.colorscheme 'gruvbox'
 vim.cmd.colorscheme 'kanagawa'
-vim.cmd.colorscheme 'gruber-darker'
-vim.cmd.colorscheme 'lackluster'
 
 -- Switch themes easily
 vim.keymap.set('n', '<leader>T', ':Telescope colorscheme<CR>', { desc = '[T]hemes' })

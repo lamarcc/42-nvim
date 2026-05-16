@@ -10,7 +10,7 @@ return {
 	-- dependencies = {
 	-- -- NOTE: We already have nvim-notify enabled by default!
 	--
-	-- 	'rcarriga/nvim-notify',
+		-- 'rcarriga/nvim-notify',
 	-- },
 	-- config = function()
 	-- 	require('lsp-notify').setup({
