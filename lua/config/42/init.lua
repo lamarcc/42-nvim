@@ -6,7 +6,7 @@
 vim.g.user42 = 'celamarc'
 vim.g.mail42 = 'celamarc@student.42lyon.fr'
 
-vim.g.kanagawa_transparent = true  -- <- ici
+-- vim.g.kanagawa_transparent = true  -- <- ici
 
 vim.api.nvim_create_user_command("TransparentToggle", function()
     local k = require("kanagawa")

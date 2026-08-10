@@ -17,4 +17,11 @@ return {
     {
         "mg979/vim-visual-multi",
     },
+	{
+		"vyfor/cord.nvim",
+	},
+	{
+		"wakatime/vim-wakatime",
+		lazy = false
+	}
 }

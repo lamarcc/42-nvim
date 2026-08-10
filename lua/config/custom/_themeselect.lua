@@ -12,6 +12,7 @@
 --vim.cmd.colorscheme 'onedark'
 vim.cmd.colorscheme 'gruvbox'
 vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'monochrome'
 
 -- Switch themes easily
 vim.keymap.set('n', '<leader>T', ':Telescope colorscheme<CR>', { desc = '[T]hemes' })
