@@ -74,3 +74,40 @@ else
 	vim.notify("If you see this you haven't configured your stuff!\nDon't forget to take a peek at your ~/.config/nvim",
 		vim.log.levels.ERROR, { title = "42-Nvim" })
 end
+
+vim.opt.fillchars = {
+  vert = " ",
+  vertleft = " ",
+  vertright = " ",
+  verthoriz = " ",
+  horiz = " ",
+  horizup = " ",
+  horizdown = " ",
+  eob = " ",
+}
+
+-- 1. On définit le caractère utilisé pour séparer les fenêtres (ligne continue)
+vim.opt.fillchars:append({
+  vert = "│",
+  vertleft = "┤",
+  vertright = "├",
+  verthoriz = "┼",
+})
+
+-- 2. On applique une couleur subtile
+local function setup_separator()
+  -- Utilise une couleur légèrement plus claire que le fond
+  local separator_color = "#333333"
+
+  vim.api.nvim_set_hl(0, "WinSeparator", { fg = separator_color, bold = false })
+  vim.api.nvim_set_hl(0, "VertSplit", { fg = separator_color, bold = false })
+end
+
+-- Applique tout de suite
+setup_separator()
+
+-- Re-force l'application si tu changes de thème
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = setup_separator,
+})
